@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
 
+const port = process.env.PORT || 3000;
+
 app.set("view engine", "ejs");
 app.set("views", "views");
 
@@ -25,6 +27,6 @@ app.get("/", (req, res) => {
   res.render("pages/index");
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("server is running");
 });
