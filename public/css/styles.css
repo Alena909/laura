@@ -71,6 +71,21 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+.guest {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 1px solid lightblue;
+  padding: 20px;
+}
+.guest-img {
+  margin: 20px;
+}
+.guest-info {
+  padding: 20px;
+}
+
 @media screen and (min-width: 900px) {
   .container {
     width: 70%;
@@ -80,5 +95,11 @@ footer {
   }
   .home-img {
     margin-top: 60px;
+  }
+  .guest {
+    flex-direction: row;
+  }
+  .guest-info {
+    margin: auto 0;
   }
 }
